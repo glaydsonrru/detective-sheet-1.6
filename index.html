@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Detective Sheet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap');
+        
+        :root {
+            overflow: hidden;
+            overscroll-behavior: none;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            overflow: hidden;
+            overscroll-behavior: none;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+        }
+
+        .app-icon-shadow {
+            box-shadow: 0 0 50px rgba(234, 88, 12, 0.3), inset 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+
+        /* Custom Scrollbar - Grossa e Bem Visível */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 14px; /* Aumentado para controle total */
+            display: block !important;
+        }
+        
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: rgba(15, 23, 42, 0.8);
+            border-left: 1px solid rgba(51, 65, 85, 0.5);
+        }
+        
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #ea580c; /* Orange 600 */
+            border-radius: 20px;
+            border: 3px solid #020617; /* Margem para destaque visual */
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb:active {
+            background: #fb923c; /* Orange 400 ao tocar */
+        }
+
+        /* Esconder scrollbars horizontais dos jogadores para manter limpeza visual */
+        .scrollbar-hide-x::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide-x {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* Suavizar a rolagem no mobile */
+        .scroll-container {
+            -webkit-overflow-scrolling: touch;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
